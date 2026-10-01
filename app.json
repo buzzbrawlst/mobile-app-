@@ -1,0 +1,14 @@
+{
+  "expo":{
+    "name":"NOVA",
+    "slug":"nova-mobile",
+    "version":"0.1.0",
+    "orientation":"portrait",
+    "userInterfaceStyle":"dark",
+    "splash":{"backgroundColor":"#07070A"},
+    "ios":{"supportsTablet":true,"bundleIdentifier":"com.buzzbrawlst.nova"},
+    "android":{"package":"com.buzzbrawlst.nova"},
+    "web":{"bundler":"metro"},
+    "plugins":[]
+  }
+}
