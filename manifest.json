@@ -1,0 +1,11 @@
+{
+  "name":"NOVA — Digital Ecosystem",
+  "short_name":"NOVA",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#07070A",
+  "theme_color":"#07070A",
+  "orientation":"portrait",
+  "icons":[{"src":"./nova-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
