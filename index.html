@@ -24,7 +24,7 @@
 const SUPABASE_URL="https://qumindqmcvsoxivitker.supabase.co";
 const SUPABASE_KEY="sb_publishable_Ck9vpsB7hs5VW7Hs-6uUDQ_5DV1nSSy";
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-const APP_URL=new URL("./",window.location.href).href;
+const APP_URL="https://buzzbrawlst.github.io/mobile-app-/";
 let session=null,profile=null,tab="home";
 const modules=[["AI","✦","Ask, build, brainstorm and automate.","ai"],["Games","◉","Play, compete and discover.","games"],["Social","◎","Friends, communities and messages.","social"],["Create","＋","Make sites, music, art and more.","create"],["Market","◇","Discover products and digital drops.","market"],["Mystery","⌁","Hidden layers, puzzles and events.","mystery"]];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
