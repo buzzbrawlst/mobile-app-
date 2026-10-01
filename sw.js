@@ -5,7 +5,7 @@ self.addEventListener("activate",e=>e.waitUntil(self.clients.claim()));
 self.addEventListener("fetch",e=>{
  if(e.request.method!=="GET")return;
  const u=new URL(e.request.url);
- if(u.origin===location.origin&&u.pathname.endsWith("/index.html")){
+ if(u.origin===location.origin&&(u.pathname.endsWith("/")||u.pathname.endsWith("/index.html"))){
   e.respondWith(fetch(e.request).then(async r=>{
    const html=await r.text();
    const patched=html.replace("</head>","<link rel="stylesheet" href="./nova-enhance.css"></head>").replace("</body>","<script src="./nova-enhance.js"></script></body>");
